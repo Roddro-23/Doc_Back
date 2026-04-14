@@ -8,7 +8,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/testimonials")
-@CrossOrigin(origins = "*")
+
 public class TestimonialController {
     @Autowired
     private TestimonialService service;

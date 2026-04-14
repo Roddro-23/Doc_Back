@@ -11,6 +11,7 @@
 /Users/md.ahnafrashidroddro/Desktop/Doc/src/main/java/com/doctor/backend/BackendApplication.java
 /Users/md.ahnafrashidroddro/Desktop/Doc/src/main/java/com/doctor/backend/controller/MedicalServiceController.java
 /Users/md.ahnafrashidroddro/Desktop/Doc/src/main/java/com/doctor/backend/model/ContactRequest.java
+/Users/md.ahnafrashidroddro/Desktop/Doc/src/main/java/com/doctor/backend/config/CorsConfig.java
 /Users/md.ahnafrashidroddro/Desktop/Doc/src/main/java/com/doctor/backend/service/ContactRequestService.java
 /Users/md.ahnafrashidroddro/Desktop/Doc/src/main/java/com/doctor/backend/model/MedicalService.java
 /Users/md.ahnafrashidroddro/Desktop/Doc/src/main/java/com/doctor/backend/repository/TestimonialRepository.java

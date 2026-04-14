@@ -8,7 +8,6 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/clinics")
-@CrossOrigin(origins = "*")
 public class ClinicController {
     @Autowired
     private ClinicService service;
