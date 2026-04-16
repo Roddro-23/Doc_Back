@@ -1,16 +1,33 @@
+# services:
+#   # BACKEND SERVICE
+#   - type: web
+#     name: doctor-backend
+#     env: docker
+#     plan: free
+#     dockerFilePath: ./Dockerfile
+#     envVars:
+#       - key: SPRING_DATASOURCE_URL
+#         sync: false # Set manually in dashboard
+#       - key: SPRING_DATASOURCE_USERNAME
+#         sync: false # Set manually in dashboard
+#       - key: SPRING_DATASOURCE_PASSWORD
+#         sync: false # Set manually in dashboard
+#       - key: SPRING_JPA_HIBERNATE_DDL_AUTO
+#         value: update
 services:
   # BACKEND SERVICE
   - type: web
     name: doctor-backend
     env: docker
     plan: free
-    dockerFilePath: ./Dockerfile
+    rootDir: backend
+    dockerfilePath: ./Dockerfile
     envVars:
       - key: SPRING_DATASOURCE_URL
-        sync: false # Set manually in dashboard
+        sync: false
       - key: SPRING_DATASOURCE_USERNAME
-        sync: false # Set manually in dashboard
+        sync: false
       - key: SPRING_DATASOURCE_PASSWORD
-        sync: false # Set manually in dashboard
+        sync: false
       - key: SPRING_JPA_HIBERNATE_DDL_AUTO
         value: update
