@@ -21,19 +21,6 @@ services:
       - key: SPRING_JPA_HIBERNATE_DDL_AUTO
         value: update
 
-  # FRONTEND SERVICE
-  - type: web
-    name: doctor-frontend
-    env: static
-    plan: free
-    rootDir: doctor-ui-main
-    buildCommand: npm install && npm run build
-    staticPublishPath: dist
-    routes:
-      - type: rewrite
-        source: /*
-        destination: /index.html
-
 databases:
   - name: doctor-db
     plan: free
