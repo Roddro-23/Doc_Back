@@ -13,7 +13,8 @@ public class CorsConfig {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**")
-                        .allowedOriginPatterns("*") // Allows any origin, including localhost React and Render
+                        .allowedOriginPatterns("https://doc-front-five.vercel.app") // Allows any origin, including //
+                                                                                    // localhost React and Render
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                         .allowedHeaders("*")
                         .allowCredentials(true);
